@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* header start */
 .header-top {
     width: 100%;
@@ -17,6 +18,10 @@
 .header-top span {
     font-size: 15px;
 }
+.header-top .phone {
+    color: #00FFFF;
+    font-size: 25px;
+}
 /* header end */
 
 /* banner section start */
@@ -28,7 +33,7 @@
     align-items: center;
     padding: 0px 100px;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-     url("../img/industrial.png");
+        url("../img/industrial.png");
     background-size: cover;
 }
 main {
@@ -87,11 +92,10 @@ aside textarea {
     color: #022D7C;
     text-align: center;
 }
-
 /* /feature section ends */
 
 /* about us section start */
- .about-us {
+.about-us {
     width: 100%;
     height: 250px;
     padding: 40px 250px;
@@ -123,6 +127,7 @@ aside textarea {
     color: black;
     background-color: #fff;
 }
+
 /* about us section ends */
 
 /* description section start*/
@@ -165,3 +170,125 @@ footer {
     font-size: 15px;
 }
 /* footer ends */
+
+/* media quaries */
+@media screen and (max-width: 991px) {
+    .header-top {
+        padding: 0px 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header-top span {
+        font-size: 14px;
+    }
+    .header-top h2 {
+        font-size: 13px;
+    }
+    .banner {
+        display: block;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        padding: 0px 100px;
+    }
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner span {
+        font-size: 35px;
+    }
+    aside {
+        padding: 20px 10px;
+        width: 430px;
+        text-align: center;
+        margin: auto;
+    }
+    aside form {
+        text-align: center;
+    }
+    .Feature {
+        display: block;
+        width: 100%;
+        padding: 30px;
+        justify-content: center;
+    }
+    .Feature .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .Feature img {
+        width: 100%;
+    }
+    .about-us {
+        padding: 10px 30px;
+    }
+    .description .desc {
+        width: 100%;
+    }
+    .about-us h2 {
+        font-size: 15px;
+    }
+    .about-us {
+        padding: 20px 10px;
+        margin-bottom: 15px;
+        height: auto;
+        width: 100%;
+    }
+    .about-us p {
+        font-size: 13px;
+    }
+    .description {
+        display: block;
+        width: 100%;
+        padding: 10px 40px;
+    }
+    .description .img-flex {
+        width: 100%;
+    }
+    .description .desc {
+        width: 100%;
+        margin: 15px;
+    }
+    .description img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-top {
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+    .header-top .phone {
+        font-size: 14px;
+    }
+    aside {
+        width: 100%;
+        padding: 0px 20px;
+        text-align: center;
+    }
+    aside input[type],
+    aside textarea {
+        width: 100%;
+        height: 20px;
+    }
+    aside h2 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .header-top h2 {
+        font-size: 10px;
+    }
+    .banner h1 {
+        font-size: 17px;
+    }
+    .banner  span {
+        font-size: 25px;
+    }
+    footer {
+        font-size: 10px;
+    }
+}
